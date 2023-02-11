@@ -5,7 +5,7 @@ color3 #345B63
 color4 #D4ECDD */
 
 .wrapper {
-    height: 1000px;
+    height: 870px;
     width: auto;
     background-color: #b4d8c2;
 }
@@ -20,7 +20,7 @@ color4 #D4ECDD */
     transition: all 2s;
 }
 
-.header .logo:hover{
+.header .logo:hover {
     transform: rotate(360deg);
 }
 
@@ -32,21 +32,48 @@ color4 #D4ECDD */
     text-align: center;
 }
 
-.header h2, h3{
+.header .banner2 {
+    height: 100px;
+    width: 100%;
+    background-color: #345B63;
+    float: left;
+    text-align: center;
+}
+
+h1 {
+    color: #b4d8c2;
+    font-size: 2.0rem;
+}
+
+p {
+    color: #03533b;
+    font-size: 1.8rem;
+    text-align: center;
+
+}
+
+.header h2,
+h3 {
     margin-top: 5%;
     color: #D4ECDD;
     font-size: 2.2em;
 }
 
-.hometext .hometext, .hometext2{
+.hometext .hometext,
+.hometext2 {
     text-align: center;
     margin-top: 5%;
-    color: #14c4e4;
-    font-size: 2.2em;
+    color: #03533b;
+    font-size: 2.0em;
 }
 
 .menu {
     height: 430px;
+    width: 100%;
+    background-color: #345B63;
+}
+.menu2 {
+    height: 30px;
     width: 100%;
     background-color: #345B63;
 }
@@ -72,7 +99,75 @@ color4 #D4ECDD */
     transition: all 2s;
 }
 
-.menu ul li a:hover{
+.menu ul li a:hover {
     border-radius: 20px 20px 0px 0px;
     background-color: aqua;
+}
+.menu2 ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.menu2 ul li {
+    width: 25%;
+    float: left;
+}
+
+.menu2 ul li a {
+    background-color: #D4ECDD;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 6px 5px;
+    border-radius: 10px 10px 20px 20px;
+    transition: all 2s;
+}
+
+.menu2 ul li a:hover {
+    border-radius: 20px 20px 0px 0px;
+    background-color: aqua;
+}
+
+.footer {
+    text-align: center;
+    background-color: #345B63;
+}
+
+.footer p {
+    color: #b4d8c2;
+}
+
+.footer a{
+    color: #D4ECDD;
+    padding-left: 25px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/* About CSS */
+
+.details ul {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #345B63;
+    list-style-type: none;
+}
+.work_domain{
+    background-color: aquamarine;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border: 3px dotted green;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.work_domain h3{
+    color: #345B63;
+}
+
+.image{
+    background-color: #b4d8c2;
 }
