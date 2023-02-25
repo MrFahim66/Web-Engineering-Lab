@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="row ">
+        <div>
+            <h1 align="center">Printing Numbers Using For Loop Js</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div align="center">
+            <h3>Enter Starting Number: </h3>
+        </div>
+        <div align="center">
+            <input type="number" id="sNumber" class="inputNumber">
+        </div>
+    </div>
+
+    <div>
+        <div align="center">
+            <h3>Enter Ending Number: </h3>
+        </div>
+        <div align="center">
+            <input type="number" id="eNumber" class="inputNumber">
+        </div>
+    </div>
+
+    <div>
+        <table align="center">
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <div align="center">
+                        <input type="submit" id="loopGenerate" value="Generate Loop" class="generateLoop">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <div align="center">
+            <h3>Result: </h3>
+        </div>
+        <div align="center">
+            <input type="text" name="" id="showResult">
+        </div>
+    </div>
+
+    <script>
+        var loopControl = document.getElementById('loopGenerate');
+        loopControl.onclick = function () {
+            var firstInput = Number(document.getElementById('sNumber').value);
+            var secondInput = Number(document.getElementById('eNumber').value);
+
+            var i, res;
+
+            for (i = firstInput; i <= secondInput; i++) {
+                res = i;
+                document.getElementById('showResult').value += i + " ";
+            }
+        }
+    </script>
+</body>
+
+</html>
