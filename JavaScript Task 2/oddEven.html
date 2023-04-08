@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even/Odd Checker</title>
+</head>
+
+<body>
+    <div class="home" align="center">
+        <h1>Even/Odd Checker Using Alerts</h1>
+        <label for="startNumberInput">Enter starting number:</label>
+        <input type="number" id="startNumberInput">
+        <br><br>
+        <label for="endNumberInput">Enter ending number:</label>
+        <input type="number" id="endNumberInput">
+        <br><br>
+        <button onclick="checkNumber()">Check</button>
+    </div>
+
+    <script>
+        function checkNumber() {
+            let startNumber = parseInt(document.getElementById("startNumberInput").value);
+            let endNumber = parseInt(document.getElementById("endNumberInput").value);
+            let evenNumbers = [];
+            let oddNumbers = [];
+            if (isNaN(startNumber) || isNaN(endNumber)) {
+                alert("Please Enter Valid Numbers!");
+            } else if (startNumber >= endNumber) {
+                alert("Please enter valid range of numbers!");
+            } else {
+                for (let i = startNumber; i <= endNumber; i++) {
+                    if (i % 2 === 0) {
+                        evenNumbers.push(i);
+                    } else {
+                        oddNumbers.push(i);
+                    }
+                }
+                alert("Even Numbers: " + evenNumbers.join(", "));
+                alert("Odd Numbers: " + oddNumbers.join(", "));
+            }
+        }
+    </script>
+</body>
+
+</html>

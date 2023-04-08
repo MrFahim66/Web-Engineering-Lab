@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+</head>
+<body>
+
+  <h2>Login Form</h2>
+
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Email: <input type="text" name="email"><br><br>
+    Password: <input type="password" name="password"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    function validateForm() {
+      var email = document.forms["myForm"]["email"].value;
+      var password = document.forms["myForm"]["password"].value;
+      if (email.includes("@gmail.com") && password.length >= 8) {
+        return true;
+      } else {
+        alert("Invalid email or password");
+        return false;
+      }
+    }
+  </script>
+
+</body>
+</html>
