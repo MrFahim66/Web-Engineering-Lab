@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="script.js"></script>
+    <title>Lab Final Practice</title>
+</head>
+
+<body onload="showSlides()">
+    <div class="wrapper">
+        <div class="topdetails">
+            <div class="col_12 menu_height">
+                <h1>Daffodil International University</h1>
+            </div>
+
+            <div class="col_12 menu_height">
+                <h1>Faculty of Science and Information Technology</h1>
+            </div>
+
+            <div class="col_12 menu_height">
+                <h1>Final Examination: Spring 2023</h1>
+            </div>
+
+            <div class="col_12 menu_height">
+                <h1>Course Code: CSE415 Course Title Web Engineering Lab</h1>
+            </div>
+
+            <div class="col_3 menu_height">
+                <h2>1.30 Hrs
+                </h2>
+            </div>
+
+            <div class="col_9 menu_height" id="marks">
+                <h2>Marks: 40</h2>
+            </div>
+        </div>
+
+        <div class="col_12">
+            <header>
+                <img src="Images/logo.png" alt="Logo" height="50px" width="50px">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Admission</a></li>
+                        <li><a href="#">Academics</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">On Campus Visitor</a></li>
+                        <li><a href="#">International</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="col_12">
+            <div class="slideshow">
+                <div class="mySlides">
+                    <img src="Images/image1.jpg" height="300px" width="100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="Images/image2.jpg" height="300px" width="100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="Images/image3.png" height="300px" width="100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="Images/image4.jpg" height="300px" width="100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="Images/image5.jpg" height="300px" width="100%">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col_12" id="event">
+            <div class="col_3 event_height">
+                <h4>Event Details</h4>
+                <img src="Images/image1.jpg" alt="" height="80px" width="80px">
+            </div>
+            <div class="col_3 event_height">
+                <h4>Event Details</h4>
+                <img src="Images/image1.jpg" alt="" height="80px" width="80px">
+            </div>
+            <div class="col_3 event_height">
+                <h4>Event Details</h4>
+                <img src="Images/image1.jpg" alt="" height="80px" width="80px">
+            </div>
+            <div class="col_3 event_height">
+                <h4>Event Details</h4>
+                <img src="Images/image1.jpg" alt="" height="80px" width="80px">
+            </div>
+        </div>
+
+        <div class="col_12 menu_height list">
+            <nav>
+                <ul>
+                    <li><a href="#">NGPC</a></li>
+                    <li><a href="#">Math Olympiad</a></li>
+                    <li><a href="#">IUPC</a></li>
+                    <li><a href="#">ICPC</a></li>
+                    <li><a href="#">CSE Fest</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="col_12 form_height" id="stform">
+            <form action="index.php" method="post">
+                <h2>Student Registration</h2>
+
+                ID: <input type="number" name="id"><br><br>
+                Name: <input type="text" name="name"><br><br>
+                Email: <input type="email" name="email"><br><br>
+                Contact: <input type="number" name="contact"><br><br>
+
+                <input type="submit" value="Insert" name="insert">
+                <input type="submit" value="Update" name="update">
+                <input type="submit" value="Delete" name="delete">
+            </form>
+        </div>
+
+        <div class="col_6 content_height" id="author">
+            <h3>Division Of Research <br>Useful Links</h3>
+
+            <ul>
+                <li><a href="#">Journal of Science And Technology</a></li>
+                <li><a href="#">Math Olympiad</a></li>
+                <li><a href="#">IUPC</a></li>
+                <li><a href="#">ICPC</a></li>
+                <li><a href="#">CSE Fest</a></li>
+            </ul>
+        </div>
+
+        <div class="col_6 content_height" id="author2">
+            <h2>Login Form</h2>
+
+            <form name="myForm" onsubmit="return validateForm()">
+                Email: <input type="text" name="email"><br><br>
+                Password: <input type="password" name="password"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="col_12 event_height">
+            <h2 align="center" id="st">Students Corner</h2>
+
+            <div class="col_2 stc" align="center" id="stdc">
+                <img src="Images/logo.png" alt="" height="50px" width="50px">
+                <h4>Student Portal</h4>
+            </div>
+
+            <div class="col_2 stc" align="center" id="stdc">
+                <img src="Images/logo.png" alt="" height="50px" width="50px">
+                <h4>Student Portal</h4>
+            </div>
+
+            <div class="col_2 stc" align="center" id="stdc">
+                <img src="Images/logo.png" alt="" height="50px" width="50px">
+                <h4>Student Portal</h4>
+            </div>
+
+            <div class="col_2 stc" align="center" id="stdc">
+                <img src="Images/logo.png" alt="" height="50px" width="50px">
+                <h4>Student Portal</h4>
+            </div>
+
+            <div class="col_2 stc" align="center" id="stdc">
+                <img src="Images/logo.png" alt="" height="50px" width="50px">
+                <h4>Student Portal</h4>
+            </div>
+
+            <div class="col_2 stc" align="center" id="stdc">
+                <img src="Images/logo.png" alt="" height="50px" width="50px">
+                <h4>Student Portal</h4>
+            </div>
+        </div>
+
+        <div class="col_12 header_height" id="event">
+            <h2>Our Alumni</h2>
+            <div class="col_3 event_height" id="alumni">
+                <img src="Images/image2.jpg" alt="" height="80px" width="80px">
+                <h4>Event Details</h4>
+            </div>
+            <div class="col_3 event_height" id="alumni">
+                <img src="Images/image2.jpg" alt="" height="80px" width="80px">
+                <h4>Event Details</h4>
+            </div>
+            <div class="col_3 event_height" id="alumni">
+                <img src="Images/image2.jpg" alt="" height="80px" width="80px">
+                <h4>Event Details</h4>
+            </div>
+            <div class="col_3 event_height" id="alumni">
+                <img src="Images/image2.jpg" alt="" height="80px" width="80px">
+                <h4>Event Details</h4>
+            </div>
+        </div>
+
+        <div class="col_12 footer_height">
+            <footer align="center">
+                Copyright 2023 Daffodil International University
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>

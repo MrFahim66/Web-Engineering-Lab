@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.col_1 {
+    width: 8.33%;
+}
+
+.col_2 {
+    width: 16.66%;
+}
+
+.col_3 {
+    width: 25%;
+}
+
+.col_4 {
+    width: 33.33%;
+}
+
+.col_5 {
+    width: 41.66%;
+}
+
+.col_6 {
+    width: 50%;
+}
+
+.col_7 {
+    width: 58.33%;
+}
+
+.col_8 {
+    width: 66.66%;
+}
+
+.col_9 {
+    width: 75%;
+}
+
+.col_10 {
+    width: 83.33%;
+}
+
+.col_11 {
+    width: 91.66%;
+}
+
+.col_12 {
+    width: 100%;
+}
+
+[class*='col_'] {
+    float: left;
+    border: 1px solid black;
+}
+
+.wrapper {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.header_height {
+    height: 200px;
+}
+
+.menu_height {
+    height: 50px;
+}
+
+.event_height{
+    height: 150px;
+}
+
+.form_height{
+    height: 250px;
+}
+
+.content_height {
+    height:500px;
+}
+
+.bigFooter_height {
+    height: 300px;
+}
+
+.footer_height {
+    height: 40px;
+}
+
+.topdetails {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#marks {
+    text-align: right;
+}
+
+#stform{
+    text-align: center;
+}
+
+#author h3{
+    text-align: center;
+    color: blue;
+}
+
+#author ul{
+    padding-left: 70px;
+}
+
+#author2{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-left: 5px;
+}
+
+list{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+
+nav ul {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+    flex-grow: 1;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#event{
+    align-content: center;
+    text-align: center;
+}
+
+#stdc{
+    border: none;
+}
+
+#st{
+    margin-bottom: 30px;
+}
+
+#event2{
+    margin-top: 20px;
+}
+
+#alumni{
+    margin-top: 30px;
+    border: none;
+}
